@@ -18,7 +18,7 @@ You can provide the kwarg `kms_client` to which an authenticated kms client inst
 For instance, if you want to provide keys via local variables you can do:
 ```python
 import boto3
-from ethereum_kms_signer import sign_transaction, get_eth_address
+from polonity_ethereum_kms_signer import sign_transaction, get_eth_address
 
 ACCESS_KEY = 'access_key'
 SECRET_KEY = 'secret_key'
@@ -39,7 +39,7 @@ signed_tx = sign_transaction(tx_obj, key_id, kms_client)
 ## Get ethereum address from KMS key
 
 ```python
-from ethereum_kms_signer import get_eth_address
+from polonity_ethereum_kms_signer import get_eth_address
 address = get_eth_address('THE-AWS-KMS-ID')
 print(address)
 ```
@@ -47,7 +47,7 @@ print(address)
 ## Sign a transaction object with KMS key
 
 ```python
-from ethereum_kms_signer import sign_transaction
+from polonity_ethereum_kms_signer import sign_transaction
 
 dai_txn = dai.functions.transfer(
     web3.toChecksumAddress(to_address.lower()), amount

@@ -1,7 +1,7 @@
 import fire
 from web3 import Web3
 
-from ethereum_kms_signer.kms import get_eth_address, sign_transaction
+from polonity_ethereum_kms_signer.kms import get_eth_address, sign_transaction
 
 
 def ether_transfer(

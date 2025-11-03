@@ -49,7 +49,7 @@ manage your private keys.
 ### Get ethereum address from KMS key
 
 ```python
-from ethereum_kms_signer import get_eth_address
+from polonity_ethereum_kms_signer import get_eth_address
 address = get_eth_address('THE-AWS-KMS-ID')
 print(address)
 ```
@@ -57,7 +57,7 @@ print(address)
 ### Sign a transaction object with KMS key
 
 ```python
-from ethereum_kms_signer import sign_transaction
+from polonity_ethereum_kms_signer import sign_transaction
 
 dai_txn = dai.functions.transfer(
     web3.toChecksumAddress(to_address.lower()), amount

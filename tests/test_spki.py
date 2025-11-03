@@ -1,6 +1,6 @@
 from base64 import b64decode
 
-from ethereum_kms_signer.spki import (
+from polonity_ethereum_kms_signer.spki import (
     der_encoded_public_key_to_eth_address,
     get_sig_r_s,
     get_sig_v,
